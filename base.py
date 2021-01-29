@@ -59,6 +59,7 @@ class LastFmSpotify:
 
 
     def create_spotify_playlist(self):
+        #Function to create your playlist
         data = {
             "name": "FM Pony Top 20 songs",
             "description": "Songs from the topcharts of Last FM created via an API",
@@ -78,6 +79,7 @@ class LastFmSpotify:
 
 
     def add_songs_to_playlist(self):
+        #Function to add songs to your playlist
         uri_list = json.dumps(self.uris)
         url = f"https://api.spotify.com/v1/playlists/{self.playlist_id}/tracks"
         response = requests.post(url, data= uri_list, headers= self.spotify_headers)
@@ -87,8 +89,10 @@ class LastFmSpotify:
             self.exceptionalExceptions(response.status_code, response.text())
 
     def list_songs_in_playlist(self):
+        #Get a List of a User's Playlists
         #https://open.spotify.com/playlist/2surv8vmfV0zRQL2sFtcu5
-        self.playlist_id = '2surv8vmfV0zRQL2sFtcu5'
+        #Insert your playlist ID
+        self.playlist_id = ''
         url = f"https://api.spotify.com/v1/playlists/{self.playlist_id}/tracks"
         response = requests.get(url, headers= self.spotify_headers)
         if response.status_code != 200:
