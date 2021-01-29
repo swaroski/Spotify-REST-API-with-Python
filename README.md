@@ -11,8 +11,4 @@ The base address of Web API is https://api.spotify.com. The API provides a set o
 Requests
 The Spotify Web API is based on REST principles. Data resources are accessed via standard HTTPS requests in UTF-8 format to an API endpoint. Where possible, Web API uses appropriate HTTP verbs for each action:
 
-METHOD	ACTION
-GET	Retrieves resources
-POST	Creates resources
-PUT	Changes and/or replaces resources or collections
-DELETE	Deletes resources
+
