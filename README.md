@@ -1,7 +1,8 @@
 # Spotify-REST-API-with-Python
 Based on simple REST principles, the Spotify Web API endpoints return JSON metadata about music artists, albums, and tracks, directly from the Spotify Data Catalogue.
 
-![spotify](https://user-images.githubusercontent.com/25379742/106225408-11c38a80-61b3-11eb-8640-cd3688fb79c1.jpg
+![spotify](https://user-images.githubusercontent.com/25379742/106225408-11c38a80-61b3-11eb-8640-cd3688fb79c1.jpg)
+](url)
 
 Web API also provides access to user related data, like playlists and music that the user saves in the Your Music library. Such access is enabled through selective authorization, by the user.
 
